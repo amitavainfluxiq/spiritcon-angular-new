@@ -1,0 +1,29 @@
+.Chad_Ledford_Pic{ width: 280px!important;}
+
+.he_Hidden_Sage{ width: 960px; display: block; margin: 0 auto;}
+
+.newimgconblock_span{ width: 960px; display: block; margin: 0 auto; border: solid 1px #ccc; margin-bottom: 20px; padding: 10px;}
+
+
+@media(max-width:980px){
+
+
+    .he_Hidden_Sage{ width: 90%; display: block; margin: 0 auto; margin-bottom: 40px;}
+    .newimgconblock_span{ width: 90%; padding:0 10px;  }
+
+    .Chad_Ledford_Pic{ display: block; width: auto; max-width: 100%; margin: 0 auto; margin-top: 10px;}
+}
+
+
+@media(max-width:800px){
+
+    
+
+    .newimgconblock_span{ margin-top: 40px}
+}
+
+@media(max-width:480px){
+
+    .he_Hidden_Sage{ width: 98%;}
+    .newimgconblock_span{ width: 98%;}
+}
