@@ -15,13 +15,18 @@ export class IndexComponent implements OnInit {
     public isModalShowncom1: boolean = false;
     public isModalShowncom2: boolean = false;
 
+    public isModalShownHOME: boolean = false;
+
   constructor(private router: Router) {
       this.router.events.subscribe((evt) => {
           if (!(evt instanceof NavigationEnd)) {
               return;
           }
           window.scrollTo(0, 0);
+
+          this.homemodal();
       });
+
   }
 
   ngOnInit() {
@@ -49,9 +54,14 @@ export class IndexComponent implements OnInit {
         this.isModalShown10 = false;
         this.isModalShowncom1 = false;
         this.isModalShowncom2 = false;
+        this.isModalShownHOME = false;
     }
     callbuyticket() {
         this.isModalShown3 = true;
+    }
+
+    homemodal() {
+        this.isModalShownHOME = true;
     }
     callmodalforagenda() {
         this.isModalShown = true;

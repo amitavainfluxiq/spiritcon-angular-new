@@ -1,6 +1,7 @@
 <app-header></app-header>
 
 
+
 <div class="container-fluid bannerblock">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators
@@ -555,6 +556,31 @@
                 </div>
                 <br/>
                 <h2>COMING Soon!</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div *ngIf="isModalShownHOME" class="modal fade mybuynowModal commingsoon" (onHidden)="onHidden()" bsModal #staticModal="bs-modal" [config]="{ show: true}"
+     tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" (click)="staticModal.hide()">&times;</button>
+                <div class="modallogowrapper">
+                    <a [routerLink]="['/']"><img src="../../assets/images/logo-spiritconversation.png"></a>
+                </div>
+
+             <label class="homepopuplabelcss">Due to the Coronavirus, we will be postponing SpiritCon.  We are reorganizing and plan to have our new date up soon.
+                 <a href="https://www.sltrib.com/news/2020/03/12/coronavirus-spreads-utah/?fbclid=IwAR2aH62zoQJWXIhzj0kLMNBVvtp2wnBGgLb18-2ggbZuYcmW19bD0NrnOS8%22" target="_blank">Please see this issue that we are heeding.</a>
+             </label>
+
+
             </div>
         </div>
     </div>

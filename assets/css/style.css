@@ -1087,3 +1087,17 @@ video{width:100%;max-width:100%;height:auto;}
 
 
 .lunchtable{ display: block; text-align: center; padding: 15px; font-size: 18px;  color: #fc4b09 !important; width: 100%; background: #fff;}
+
+
+.homepopuplabelcss  {
+    font-family: "RobotoBold";
+    font-size: 28px;
+    padding: 25px 0;
+    margin:0;
+    line-height: 30px;
+
+    color: #080809;
+    text-align: center;
+}
+
+.homepopuplabelcss  a{ display: block;  color: #fc4b09; padding-top: 10px;}
